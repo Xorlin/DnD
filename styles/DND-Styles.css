@@ -2,32 +2,62 @@ h1 {
 color: Black;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 40px;
 }
 h2 {
 color: Black;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 50px;
 }
 h3 {
 color: Black;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 60px;
+}
+h4 {
+color: Black;
+text-align: Left;
+font-family: Arial;
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 70px;
 }
 p {
 font-family: Arial;
 margin-bottom: 0px;
-margin-top: 12px
+margin-top: 12px;
+margin-right: 150px;
+margin-left: 80px;
+}
+th {
+font-family: Arial;
+font-size: 20px;
 }
 li {
 font-family: Arial;
 margin-bottom: 0px;
-margin-top: 3px
+margin-top: 3px;
+margin-right: 150px;
+margin-left: 80px;
+}
+img {
+margin-left: 80px;
 }
 td {
 font-family: Arial;
-margin-bottom: 0px;
-margin-top: 3px
+}
+body {
+  background-image: url("../images/ParchmentSeamless.jpg");
+  background-repeat: round;
+}
+table {
+background-color: white;
 }
