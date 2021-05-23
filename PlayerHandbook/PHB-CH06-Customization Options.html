@@ -153,7 +153,7 @@
       </tbody>
     </table>
     <h3>Class Features </h3>
-    <p>When you gain a new level in a class, you get its features for that level. A few features, however, have additional rules when you’re multiclassing: Channel Divinity, Extra Attack, Unarmored Defense, and Spellcasting. </p>
+    <p>When you gain a new level in a class, you get its features for that level. You don’t, however, receive the class’s starting equipment, and a few features have additional rules when you’re multiclassing: Channel Divinity, Extra Attack, Unarmored Defense, and Spellcasting </p>
     <h4>Channel Divinity </h4>
     <p>If you already have the Channel Divinity feature and gain a level in a class that also grants the feature, you gain the Channel Divinity effects granted by that class, but getting the feature again doesn’t give you an additional use of it. You gain additional uses only when you reach a class level that explicitly grants them to you. For example, if you are a cleric 6/paladin 4, you can use Channel Divinity twice between rests because you are high enough level in the cleric class to have more uses. Whenever you use the feature, you can choose any of the Channel Divinity effects available to you from your two classes. </p>
     <h4>Extra Attack </h4>
@@ -165,6 +165,7 @@
     <p><b>Spells Known and Prepared.</b> You determine what spells you know and can prepare for each class individually, as if you were a single-classed member of that class. If you are a ranger 4/wizard 3, for example, you know three 1st-level ranger spells based on your levels in the ranger class. As 3rd-level wizard, you know three wizard cantrips, and your spellbook contains ten wizard spells, two of which (the two you gained when you reached 3rd level as a wizard) can be 2nd-level spells. If your Intelligence is 16, you can prepare six wizard spells from your spellbook.
     </p>
     <p>Each spell you know and prepare is associated with one o f your classes, and you use the spellcasting ability of that class when you cast the spell. Similarly, a spellcasting focus, such as a holy symbol, can be used only for the spells from the class associated with that focus. </p>
+    <p>If a cantrip of yours increases in power at higher levels, the increase is based on your character level, not your level in a particular class. </p>
     <p><b>Spell Slots.</b> You determine your available spell slots by adding together all your levels in the bard, cleric, druid, sorcerer, and wizard classes, half your levels (rounded down) in the paladin and ranger classes, and a third of your fighter or rogue levels (rounded down) if you have the Eldritch Knight or the Arcane Trickster feature. Use this total to determine your spell slots by consulting the Multiclass Spellcaster table. </p>
     <p>If you have more than one spellcasting class, this table might give you spell slots of a level that is higher than the spells you know or can prepare. You can use those slots, but only to cast your lower-level spells. If a lowerlevel spell that you cast, like burning hands, has an enhanced effect when cast using a higher-level slot, you can use the enhanced effect, even though you don’t have any spells of that higher level. </p>
     <p>For example, if you are the aforementioned ranger 4/ wizard 3, you count as a 5th-level character when determining your spell slots: you have four 1st-level slots, three 2nd-level slots, and two 3rd-level slots. However, you don’t know any 3rd-level spells, nor do you know any 2nd-level ranger spells. You can use the spell slots of those levels to cast the spells you do know—and potentially enhance their effects. </p>
@@ -516,14 +517,14 @@
       <ul>
         <li>You gain a +5 bonus to initiative. </li>
         <li>You can’t be surprised while you are conscious.</li>
-        <li>Other creatures don’t gain advantage on attack rolls against you as a result of being hidden from you. </li>
+        <li>Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you. </li>
       </ul>
 	  <h3 id="athlete">Athlete </h3>
       <p>You have undergone extensive physical training to gain the  benefits: </p>
       <ul>
         <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
         <li>When you are prone, standing up uses only 5 feet of your movement. Climbing doesn’t halve your speed.</li>
-        <li>You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</li>
+        <li>Climbing doesn’t cost you extra movement.</li>
       </ul>
 	  <h3 id="charger">Charger </h3>
       <p>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. </p>
@@ -533,7 +534,7 @@
       <ul>
         <li>You ignore the loading quality of crossbows with which you are proficient. </li>
         <li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls. </li>
-        <li>When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a loaded hand crossbow you are holding. </li>
+        <li>When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a hand crossbow you are holding. </li>
       </ul>
 	  <h3 id="defensiveduelist">Defensive Duelist </h3>
       <p>Prerequisite: Dexterity 13 or higher When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you. </p>
@@ -550,7 +551,7 @@
         <li>You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors. </li>
         <li>You have advantage on saving throws made to avoid or resist traps. </li>
         <li>You have resistance to the damage dealt by traps. </li>
-        <li>You can search for traps while traveling at a normal pace, instead of only at a slow pace. </li>
+        <li>Traveling at a fast pace doesn’t impose the normal −5 penalty on your passive Wisdom (Perception) score.</li>
       </ul>
 	  <h3 id="durable">Durable </h3>
       <p>Hardy and resilient, you gain the following benefits: </p>
@@ -567,7 +568,6 @@
       <ul>
         <li>You have advantage on attack rolls against a creature you are grappling.</li>
         <li>You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends. </li>
-        <li>Creatures that are one size larger than you don’t automatically succeed on checks to escape your grapple. </li>
       </ul>
 	  <h3 id="greatweaponmaster">Great Weapon Master</h3>
       <p>You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits: </p>
@@ -633,13 +633,13 @@
       </ul>
 	  <h3 id="magicinitiate">Magic Initiate </h3>
       <p>Choose a class: bard, cleric, druid, sorcerer, warlock, or wizard. You learn two cantrips of your choice from that class’s spell list. </p>
-      <p>In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again. </p>
+      <p>In addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.</p>
       <p>Your spellcasting ability for these spells depends on the class you chose: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid: or Intelligence for wizard. </p>
 	  <h3 id="martialadept">Martial Adept </h3>
       <p>You have martial training that allows you to perform special combat maneuvers. You gain the following benefits: </p>
       <ul>
         <li>You learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver’s effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). </li>
-        <li>If you already have superiority dice, you gain one more; otherwise, you have one superiority die, which is a d6. This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest. </li>
+        <li>You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest. </li>
       </ul>
 	  <h3 id="mediumarmormaster">Medium Armor Master </h3>
       <p><i>Prerequisite: Proficiency with medium armor </i></p>
@@ -679,8 +679,8 @@
 	  <h3 id="polearmmaster">Polearm Master </h3>
       <p>You can keep your enemies at bay with reach weapons. You gain the following benefits: </p>
       <ul>
-        <li> When you take the Attack action and attack with only a glaive, halberd, or quarterstaff, you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon’s damage die for this attack is a d4, and the attack deals bludgeoning damage.</li>
-        <li>While you are wielding a glaive, halberd, pike, or quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach. </li>
+        <li> When you take the Attack action and attack with only a glaive, halberd, or quarterstaff,or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon’s damage die for this attack is a d4, and the attack deals bludgeoning damage. This attack uses the same ability modifier as the primary attack.</li>
+        <li>While you are wielding a glaive, halberd, pike, or quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter your reach. </li>
       </ul>
 	<h3 id="resilient">Resilient </h3>
     <p>Choose one ability score. You gain the following benefits: </p>
@@ -699,7 +699,7 @@
       <p>You have mastered techniques to take advantage of every drop in any enemy’s guard, gaining the following benefits: </p>
       <ul>
         <li>When you hit a creature with an opportunity attack, the creature’s speed becomes 0 for the rest of the turn. </li>
-        <li>Creatures within 5 feet of you provoke opportunity attacks from you even if they take the Disengage action before leaving your reach. </li>
+        <li>Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach. </li>
         <li>When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn’t have this feat), you can use your reaction to make a melee weapon attack against the attacking creature. </li>
       </ul>
 	  <h3 id="sharpshooter">Sharpshooter </h3>
@@ -734,10 +734,10 @@
         <li>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard. </li>
       </ul>
 	  <h3 id="tavernbrawler">Tavern Brawler</h3>
-      <p>Accustomed to rough-and-tumble fighting using whatever w eapons happen to be at hand, you gain the following benefits: </p>
+      <p>Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits: </p>
       <ul>
         <li>Increase your Strength or Constitution score by 1, to a maximum of 20. </li>
-        <li>You are proficient with improvised weapons and unarmed strikes. </li>
+        <li>You are proficient with improvised weapons. </li>
         <li>Your unarmed strike uses a d4 for damage. </li>
         <li>When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target. </li>
       </ul>
@@ -755,7 +755,7 @@
       <p>You have practiced extensively with a variety of weapons, gaining the following benefits: </p>
       <ul>
         <li>Increase your Strength or Dexterity score by 1, to a maximum of 20. </li>
-        <li>You gain proficiency with four weapons of your choice.</li>
+        <li>You gain proficiency with four weapons of your choice. Each one must be a simple or a martial weapon.</li>
       </ul>
 <!--SCRIPT FOR ACCORDIAN-->
     <script>
