@@ -2,55 +2,64 @@ h1 {
 color: DarkRed;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px;
-margin-right: 150px;
-margin-left: 40px;
+margin-bottom: 6px;
+margin-right: 5px;
+margin-left: 5px;
 }
 h2 {
 color: DarkRed;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px;
-margin-right: 150px;
-margin-left: 50px;
+margin-bottom: 6px;
+margin-right: 5px;
+margin-left: 10px;
 }
 h3 {
 color: DarkRed;
-text-decoration: underline;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px;
-margin-right: 150px;
-margin-left: 60px;
+margin-bottom: 6px;
+margin-right: 5px;
+margin-left: 15px;
 }
 h4 {
 color: DarkRed;
 text-align: Left;
 font-family: Arial;
-margin-bottom: 2px;
-margin-right: 150px;
-margin-left: 70px;
+margin-bottom: 6px;
+margin-right: 5px;
+margin-left: 20px;
 }
 p {
 font-family: Arial;
-margin-bottom: 0px;
-margin-top: 12px;
-margin-right: 150px;
-margin-left: 80px;
+margin-bottom: 9px;
+margin-top: 0px;
+margin-right: 5px;
+margin-left: 25px;
 }
 th {
 font-family: Arial;
 font-size: 20px;
 }
-li {
+ul {
 font-family: Arial;
 margin-bottom: 0px;
+margin-top: 0px;
+margin-right: 5px;
+margin-left: 25px;
+}
+ol {
+font-family: Arial;
+margin-bottom: 0px;
+margin-top: 0px;
+margin-right: 5px;
+margin-left: 25px;
+}
+li {
 margin-top: 3px;
-margin-right: 150px;
-margin-left: 80px;
 }
 img {
-margin-left: 80px;
+margin-left: 25px;
 }
 td {
 font-family: Arial;
@@ -61,4 +70,30 @@ body {
 }
 table {
 background-color: white;
+margin-left: 25px;
+}
+button {
+margin-left: 0px;
+}
+.accordion {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 2px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: Khaki; 
+}
+
+.panel {
+  padding: 0 0px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
 }

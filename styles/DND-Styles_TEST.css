@@ -1,0 +1,45 @@
+h1 {
+color: Black;
+text-align: Left;
+font-family: Arial;
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 80px;
+}
+h2 {
+color: Black;
+text-align: Left;
+font-family: Arial;
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 80px;
+}
+h3 {
+color: Black;
+text-align: Left;
+font-family: Arial;
+margin-bottom: 2px;
+margin-right: 150px;
+margin-left: 80px;
+}
+p {
+font-family: Arial;
+margin-bottom: 0px;
+margin-top: 12px;
+margin-right: 150px;
+margin-left: 80px;
+}
+li {
+font-family: Arial;
+margin-bottom: 0px;
+margin-top: 3px;
+margin-right: 150px;
+margin-left: 80px;
+}
+td {
+font-family: Arial;
+}
+body {
+  background-image: url("../images/Parchment 8.5 x 11.jpg");
+  background-repeat: round;
+}
