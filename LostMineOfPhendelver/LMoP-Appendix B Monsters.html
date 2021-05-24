@@ -6,6 +6,17 @@
     <title>LMoP-Appendix B: Monsters</title>
   </head>
   <body>
+    <button class="accordion"><h1 style="margin-top: 5px">Table of Contents</h1></button>
+    <div class="panel">
+      <p style="margin-left:60px"><b><a href="index.html">Introduction</a></b></p>
+      <p style="margin-left:60px"><b><a href="LMoP-Part1 Goblin Arrows.html">Part1: Goblin Arrows</a></b></p>
+      <p style="margin-left:60px"><b><a href="LMoP-Part2 Phalandin.html">Part2: Phalandin</a></b></p>
+      <p style="margin-left:60px"><b><a href="LMoP-Part3 The Spiders Web.html">Part3: The Spider's Web</a></b></p>
+      <p style="margin-left:60px"><b><a href="LMoP-Part4 Wave Echo Cave.html">Part4: Wave Echo Cave</a></b></p>
+      <p style="margin-left:60px"><b><a href="LMoP-Appendix A Magic Items.html">Appendix A: Magic Items</a></b></p>
+      <p style="margin-left:60px"><b><a href="LMoP-Appendix B Monsters.html">Appendix B: Monsters</a></b></p>
+    </div>
+    <!------------------------>
     <h1>Appendix B: Monsters</h1>
     <p>This section contains stat blocks and short descriptions for the creatures that appear in Lost Mine of Phandelver.</p>
     <h2>Statistics</h2>
@@ -1444,6 +1455,24 @@
       </tbody>
     </table>
 <!-- CREATURE CARD END -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
 
   </body>
 </html>
