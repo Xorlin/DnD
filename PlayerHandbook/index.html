@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href="../styles/DND-Styles.css" title="DND-Styles">
     <title>D&amp;D Player's Handbook (5e)</title>
   </head>
-  <body style="overflow: hidden">
+  <body onLoad="changeUrl()" style="overflow: hidden">
     <table style="margin-left: 0px;background-color: rgba(0, 0, 0, 0)" cellpadding="3" cellspacing="3" border="0">
 	  <tbody>
 	    <tr>
@@ -85,6 +85,7 @@
             <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH04-Personality and Background.html#Sailor" target="main">Sailor</a></p>
             <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH04-Personality and Background.html#Soldier" target="main">Soldier</a></p>
             <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH04-Personality and Background.html#Urchin" target="main">Urchin</a></p>
+            <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH04-Personality and Background.html#Haunted One" target="main">Haunted One (SPECIAL)</a></p>
             </div>
             <!------Nested 1E---->
             <button class="accordion"><h3 style="margin-top: 0px;magin-bottom: 0px;margin-left: 15px;font-size: 16px;color: Navy;">Chapter 5: Equipment</h3></button>
@@ -101,6 +102,7 @@
             <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH05-Equipment.html#Expenses" target="main">Expenses</a></p>
             <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH05-Equipment.html#Services" target="main">Services</a></p>
             <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH05-Equipment.html#Trinkets" target="main">Trinkets</a></p>
+            <p style="margin-top: 0px;magin-bottom: 0px;margin-left: 20px;font-size: 16px"><a href="PHB-CH05-Equipment.html#Gothic Trinkets" target="main">Gothic Trinkets (CoS)</a></p>
             </div>
             <!------Nested 1F---->
             <button class="accordion"><h3 style="margin-top: 0px;magin-bottom: 0px;margin-left: 15px;font-size: 16px;color: Navy;">Chapter 6: Customization Options</h3></button>
@@ -270,7 +272,7 @@
 			</div>
 		  </td>
 		  <td width="85%">
-		    <iframe src="PHB-Cover.html" name="main" scrolling="auto" style="width: 100%;height: calc(100vh - 10px);border: none" title="Iframe Example"></iframe>
+		    <iframe name="main" scrolling="auto" style="width:  calc(100vw - 300px);height: calc(100vh - 10px);border: none" title="Iframe Example"></iframe>
 		  </td>
 		</tr>
 	  </tbody>
@@ -291,6 +293,25 @@
           }
         });
       }
-    </script>
+	  
+<!--SCRIPT FOR IFRAME-->
+      function changeUrl() {
+          const queryString = window.location.search;
+          console.log(queryString);
+          const urlParams = new URLSearchParams(queryString);
+		  const myURL = urlParams.get('URL')
+          const myJump = urlParams.get('Jump')
+          if (myURL == null){
+		      var site = "PHB-Cover.html"
+		  } else {
+		      var site = myURL + "#" + myJump;
+		  }
+		  document.getElementsByName('main')[0].src = site;
+      }
+	  
+<!--SCRIPT FOR PARAMETERS-->
+
+
+	</script>
   </body>
 </html>
